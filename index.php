@@ -80,6 +80,6 @@ if ($success > 0 && isset($settings->telegram->token) && isset($settings->telegr
     ]);
 }
 
-echo json_encode($results, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+echo json_encode(array('error' => false, 'msg' => 'success', 'results' => $results), JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
 ?>
